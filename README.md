@@ -10,6 +10,8 @@ Android Execrises,recording the process of android learning.
 
 ### 实现结果
 
+![运行结果](https://github.com/fumier/RepManagement/blob/master/Res/images/AndroidExercises/toast1.PNG)
+
 
 
 
