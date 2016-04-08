@@ -1,3 +1,6 @@
+
+[TOC]
+
 ## AndroidExecrise
 Android Execrises,recording the process of android learning.
 
