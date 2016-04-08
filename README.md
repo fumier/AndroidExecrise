@@ -1,8 +1,7 @@
-[TOC]
 ## AndroidExecrise
 Android Execrises,recording the process of android learning.
 
-## Android之Toast
+## 1、Android之Toast
 ### 知识点
 - 参考链接：[http://fumier.github.io/2016/04/08/android-toast/](http://fumier.github.io/2016/04/08/android-toast/)
 
