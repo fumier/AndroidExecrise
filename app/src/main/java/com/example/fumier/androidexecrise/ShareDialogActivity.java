@@ -27,11 +27,6 @@ public class ShareDialogActivity extends Activity {
         context.startActivity(intent);
     }
 
-    @Override
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
-    }
-
     public void windowDeploy() {
         Window window = getWindow();
         window.setWindowAnimations(R.style.push_bottom);
