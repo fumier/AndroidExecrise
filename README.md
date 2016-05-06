@@ -18,6 +18,7 @@ Android Execrises,recording the process of android learning.
 
 ### 实现结果
 先说实现结果，再说实现步骤。
+
 ![运行结果](https://github.com/fumier/RepManagement/blob/master/Res/images/AndroidExercises/shareDialog.PNG)
 
 ### 实现步骤
