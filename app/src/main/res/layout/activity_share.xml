@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e5e5e6"
+    android:background="#e4e5e5"
     android:orientation="vertical"
     android:paddingLeft="30dp"
     android:paddingRight="30dp" >
@@ -10,21 +10,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="11dp"
-        android:paddingTop="16dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="12dp"
         android:text="分享到"
         android:textSize="15sp"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:background="#d6d6d6" />
+        android:background="#d3d3d3" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="26dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="15dp"
         android:gravity="center_horizontal">
 
         <LinearLayout
@@ -36,15 +36,15 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_share_weibo"/>
+                android:src="@drawable/ic_weibo"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="7dp"
                 android:text="微博"
-                android:textColor="#888888"
-                android:textSize="12sp"/>
+                android:textColor="#868686"
+                android:textSize="10sp"/>
 
         </LinearLayout>
 
