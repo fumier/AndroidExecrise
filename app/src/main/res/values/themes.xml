@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShareDialog" parent="android:style/Theme.Dialog">
+        <!--是否显示window的标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <!--去掉window的白边-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置window的背景-->
+        <item name="android:windowBackground">@null</item>
+        <!--是否浮于activity之上-->
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+</resources>
