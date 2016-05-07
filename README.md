@@ -51,8 +51,13 @@ Android Execrises,recording the process of android learning.
 ```
 相关代码：[ShareDialogActivity](https://github.com/fumier/AndroidExecrise/blob/master/app/src/main/java/com/example/fumier/androidexecrise/ShareDialogActivity.java)
 
+## intent-filter之data
+
+### 知识点
+- 参考链接[http://fumier.github.io/2016/05/07/intent-filter/](http://fumier.github.io/2016/05/07/intent-filter/)
 
 
-
-
-
+### 源代码
+- [IntentFilterActivity](https://github.com/fumier/AndroidExecrise/blob/master/app/src/main/java/com/example/fumier/androidexecrise/IntentFilterActivity.java)
+- [MySysActivity](https://github.com/fumier/AndroidExecrise/blob/master/app/src/main/java/com/example/fumier/androidexecrise/MySysActivity.java)
+- [Manifest.xml](https://github.com/fumier/AndroidExecrise/blob/master/app/src/main/AndroidManifest.xml)
