@@ -14,6 +14,16 @@
         <activity
             android:name=".IntentActivity"
             android:label="@string/title_activity_intent" >
+        </activity>
+        <activity
+            android:name=".ShareDialogActivity"
+            android:label="@string/title_activity_share_dialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShareDialog" >
+        </activity>
+        <activity
+            android:name=".IntentFilterActivity"
+            android:label="@string/title_activity_intent_filter" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +31,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ShareDialogActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/ShareDialog"
-            android:label="@string/title_activity_share_dialog" >
+            android:name=".MySysActivity"
+            android:label="@string/title_activity_my_sys" >
+            <intent-filter>
+                <action android:name="com.example.fumier.androidexecrise.SMS_INTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="smsto"/>
+            </intent-filter>
         </activity>
     </application>
 
