@@ -65,7 +65,7 @@ Android Execrises,recording the process of android learning.
 ## android之带进度条的WebView
 
 ### 知识点
-- 参考链接[http://fumier.github.io/2016/05/10/WebView/](http://fumier.github.io/2016/05/07/intent-filter/)
+- 参考链接[http://fumier.github.io/2016/05/10/WebView/](http://fumier.github.io/2016/05/10/WebView/)
 
 ### 实现步骤
 - 定制化一个进度条要悬浮在网页的最上端，如何自定化进度条，当然是参考系统中自带进度条的实现方式。无非是在系统进度条的基础上，改变进度条的style，也就是说自定义的进度条的style。
