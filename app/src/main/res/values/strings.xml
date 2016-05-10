@@ -12,4 +12,8 @@
     <string name="sms2">Send sms with SMS_INTENT</string>
     <string name="exception">Exception Condition</string>
     <string name="title_activity_my_sys">MySysActivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_web_view_activity_with_progress_bar">
+        WebViewActivityWithProgressBar
+    </string>
 </resources>

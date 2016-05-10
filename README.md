@@ -61,3 +61,54 @@ Android Execrises,recording the process of android learning.
 - [IntentFilterActivity](https://github.com/fumier/AndroidExecrise/blob/master/app/src/main/java/com/example/fumier/androidexecrise/IntentFilterActivity.java)
 - [MySysActivity](https://github.com/fumier/AndroidExecrise/blob/master/app/src/main/java/com/example/fumier/androidexecrise/MySysActivity.java)
 - [Manifest.xml](https://github.com/fumier/AndroidExecrise/blob/master/app/src/main/AndroidManifest.xml)
+
+## android之带进度条的WebView
+
+### 知识点
+- 参考链接[http://fumier.github.io/2016/05/10/WebView/](http://fumier.github.io/2016/05/07/intent-filter/)
+
+### 实现步骤
+- 定制化一个进度条要悬浮在网页的最上端，如何自定化进度条，当然是参考系统中自带进度条的实现方式。无非是在系统进度条的基础上，改变进度条的style，也就是说自定义的进度条的style。
+
+```xml
+ <style name="Widget.ProgressBar.Horizontal.Blue" parent="android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_blue</item>
+ </style>
+```
+继承Widget.Progress.Horizontal类，然后实现子类，重写progressDrawable的功能。所以我们要重新定义一个drawable文件，如何写，自然是参考Horizontal中子类progressDrawable的写法。使用layer-list相当于ps中的层叠加，进度条由一个背景色和一个表示进度的颜色组成，加入clip标签，表示进度条不断的增长的含义。
+
+```xml
+layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#dcdcde"/>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="#06B9D1"/>
+            </shape>
+        </clip>
+
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="#06B9D1"/>
+            </shape>
+        </clip>
+
+    </item>
+
+</layer-list>
+```
+
+### 实现结果
+![运行结果](https://github.com/fumier/RepManagement/blob/master/Res/images/AndroidExercises/WebViewWithProgressBar.PNG)
+
+### 参考源码
+
+
