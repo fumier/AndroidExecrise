@@ -118,7 +118,7 @@ layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 - 参考链接 [http://fumier.github.io/2016/05/11/android-selector/](http://fumier.github.io/2016/05/11/android-selector/)
 
 ### 实现结果
-![运行结果](https://github.com/fumier/RepManagement/blob/master/Res/images/AndroidExercises/WebViewWithProgressBar.PNG)
+![运行结果](https://github.com/fumier/RepManagement/blob/master/Res/images/AndroidExercises/TabHostActivity.PNG)
 
 ### 实现步骤
 上图是我仿淘宝做的TabHost，那么实现上图的TabHost所涉及到的知识点有以下几点：
