@@ -124,5 +124,21 @@ layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 上图是我仿淘宝做的TabHost，那么实现上图的TabHost所涉及到的知识点有以下几点：
 - selector（drawable和color）的使用
 - FragmentTabHost类的使用
+本次代码的重点是练习selector的使用。在上图中以“首页”为例，点击首页，按钮和字体均改变颜色。
+```xml
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_home_red" android:state_selected="true" />
+    <item android:drawable="@drawable/ic_home_red" android:state_pressed="true" />
+    <item android:drawable="@drawable/ic_home" />
+</selector>
+```
+而字体颜色通过TextView中的style="@style/TabTextStyle"来设置，TabTextStyle继承Widget.TextView属性，这里面最重要的是对TextColor属性值进行重写。<item name="android:textColor">@color/tab_text_color_selector</item>,此颜色属性同样涉及一个颜色选择器。
+```xml
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#ff5000" android:state_selected="true" />
+    <item android:color="#5b6160" />
+</selector>
+```
+### 程序参考
 
-
+- [TabHostActivity](https://github.com/fumier/AndroidExecrise/blob/master/app/src/main/java/com/example/fumier/androidexecrise/TabHostActivity.java) 
