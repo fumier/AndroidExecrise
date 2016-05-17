@@ -3,8 +3,8 @@
     package="com.example.fumier.androidexecrise" >
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <!--<uses-permission android:name="ANDROID.PERMISSION.INTERNET"/>-->
 
+    <!-- <uses-permission android:name="ANDROID.PERMISSION.INTERNET"/> -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,6 +39,28 @@
         <activity
             android:name=".WebViewActivity"
             android:label="@string/title_activity_web_view" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".WebViewProgressBarActivity"
+            android:label="@string/title_activity_web_view_activity_with_progress_bar" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".SelectorActivity"
+            android:label="@string/title_activity_selector" >
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
 
@@ -46,12 +68,12 @@
             <!--</intent-filter>-->
         </activity>
         <activity
-            android:name=".WebViewProgressBarActivity"
-            android:label="@string/title_activity_web_view_activity_with_progress_bar" >
+            android:name=".TabHostActivity"
+            android:label="@string/title_activity_tab_host" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+            <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
